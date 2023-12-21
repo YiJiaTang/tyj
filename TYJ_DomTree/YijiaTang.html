@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+		<meta charset="utf-8">
+		<meta name="description" content="A Christmas tree built out of form elements." />
+		<meta name="author" content="YijiaTang" />
+		<link rel="icon" href="tang.ico" type="image/x-icon">
+
+
+        <title>DOM Tree</title>
+
+		<link href="css/domtree.css" rel="stylesheet" media="screen" />  <!-- 在 HTML 文档中引入一个名为 domtree.css 的样式表文件，用于设置文档的外观和样式。 -->
+
+		<link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>  <!-- 从 Google Fonts 中引入一种名为 "Armata" 的字体，然后应用于你的网页-->
+
+    </head>
+    <body>
+<!-- 这是一个简单的HTML结构，包含一个具有类名为 "tree" 的 <div> 元素。在该HTML中，这个 <div> 元素被赋予了一个类名为 "tree" 的CSS类，可能是为了对这个元素应用一些样式或者与其它元素进行区分。
+浏览器在解析页面时引入名为 "domtree.js" 的 JavaScript 文件。这个文件很可能包含与页面上的 "tree" 元素相关的 JavaScript 代码。通常，这是一种将 HTML 结构和 JavaScript 逻辑分离的做法，使代码更易于维护和组织。 -->
+
+    	<div class="tree"></div>
+
+		<script src="js/domtree.js"></script>
+
+		<!-- Third party scripts and sharing UI -->
+		<p class="project-title">DOM Tree by YijiaTang</p>
+
+		<div class="credits">
+			<a href="https://www.douyin.com/user/MS4wLjABAAAAaixBJHRq7Q2gjoW5sHibIaOjbLTHvvfP0BKLi1QjEX8">抖音</a>
+			<a href="https://weibo.com/6531368091?refer_flag=1001030103_">微博</a>
+			<a href="https://blog.csdn.net/TYJhhxx?type=blog" target="_blank">CSDN</a>
+		</div>
+
+		<style type="text/css" media="screen">
+			.project-title {
+				position: absolute;
+				left: 25px;
+				bottom: 20px;
+
+				font-size: 16px;
+				color: #fff;
+			}
+
+			.credits {
+				position: absolute;
+				right: 20px;
+				bottom: 25px;
+				font-size: 15px;
+				z-index: 20;
+				color: #fff;
+				vertical-align: middle;
+			}
+
+			.credits * + * {
+				margin-left: 15px;
+			}
+
+			.credits a {
+				padding: 8px 10px;
+				color: rgba(255,255,255,0.7);
+				border: 2px solid rgba(255,255,255,0.7);
+				text-decoration: none;
+			}
+
+			.credits a:hover {
+				border-color: #fff;
+				color: #fff;
+			}
+
+			@media screen and (max-width: 1040px) {
+				.project-title {
+					display: none;
+				}
+
+				.credits {
+					width: 100%;
+					left: 0;
+					right: auto;
+					bottom: 0;
+					padding: 30px 0;
+					background: #b72424;
+					text-align: center;
+				}
+
+				.credits a {
+					display: inline-block;
+					margin-top: 7px;
+					margin-bottom: 7px;
+				}
+			}
+		</style>
+<!--
+		<script>
+			var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
+			(function(d, t) {
+			var g = d.createElement(t),
+			    s = d.getElementsByTagName(t)[0];
+			g.async = true;
+			g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g, s);
+			})(document, 'script');
+		</script>
+-->
+<!-- 创建一个 audio 元素 -->
+<audio controls>
+	
+  <source src="Troye Sivan - TALK ME DOWN.mp3" type="audio/mp3">
+  Your browser does not support the audio tag.
+</audio>
+
+    </body>
+</html>
